@@ -12,3 +12,4 @@
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.pdb
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.genruntimeconfig.cache
 /Users/evans/webroot/csharp/obj/Debug/net8.0/ref/csharp.dll
+/Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.sourcelink.json
