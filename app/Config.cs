@@ -8,6 +8,6 @@ public class Config : DbContext {
     {
         
     }
-
+    // property to create Categories DbTable
     public DbSet<Category> Categories { get; set; }
 }
