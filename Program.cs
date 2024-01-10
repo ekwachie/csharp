@@ -1,7 +1,14 @@
+using csharp.app;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Uisng MySql database connection
+var connect = builder.Configuration.GetConnectionString("MySqlConn");
+builder.Services.AddDbContext<Config>(options=> options.UseMySql(connect, ServerVersion.AutoDetect(connect)));
 
 var app = builder.Build();
 
