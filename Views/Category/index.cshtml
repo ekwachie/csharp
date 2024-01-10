@@ -1,0 +1,18 @@
+@model List<Category>
+<h1>Category List</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Category name</th>
+            <th>Display Order</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var cat in Model){
+        <tr>
+            <td>@cat.Name</td>
+            <td>@cat.DisplayOrder</td>
+        </tr>
+        }
+    </tbody>
+</table>
