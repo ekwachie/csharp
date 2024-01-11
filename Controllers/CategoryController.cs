@@ -11,16 +11,41 @@ public class CategoryController : Controller
     {
         db = conn;
     }
-    public IActionResult Index(){
+    public IActionResult Index()
+    {
         List<Category> objCategoryList = db.Categories.ToList();
         return View(objCategoryList);
     }
 
-    public IActionResult Create(){
+    // for View
+    public IActionResult Create()
+    {
         return View();
     }
 
-        public IActionResult Edit(){
+    //for post request to create category
+    [HttpPost]
+    public IActionResult Create(Category cat)
+    {
+        if (cat.Name == cat.DisplayOrder.ToString())
+        {
+            ModelState.AddModelError("Name", "The name should not match the display order");
+        }
+        if (cat.Name != null && cat.Name.Equals("test", StringComparison.CurrentCultureIgnoreCase))
+        {
+            ModelState.AddModelError("Name", "test is invalid valid");
+        }
+        if (ModelState.IsValid)
+        {
+            db.Categories.Add(cat);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+        return View();
+    }
+
+    public IActionResult Edit()
+    {
         return View();
     }
 }

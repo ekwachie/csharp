@@ -4,9 +4,8 @@
         <div class="col">
             <h2 class="text-primary">Category Lists</h2>
         </div>
-        <div class="col">
+        <div class="col text-end">
             <a asp-controller="category" asp-action="create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create new category</a>
-            <a asp-controller="category" asp-action="edit" class="btn btn-success"><i class="bi bi-plus-circle"></i> Edit</a>
         </div>
     </div>
     <table class="table table-striped">
@@ -14,6 +13,7 @@
             <tr>
                 <th>Category name</th>
                 <th>Display Order</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -22,6 +22,7 @@
                 <tr>
                     <td>@cat.Name</td>
                     <td>@cat.DisplayOrder</td>
+                    <td><a asp-controller="category" asp-action="edit" class="btn btn-sm btn-success"><i class="bi bi-pencil"></i> Edit</a></td>
                 </tr>
             }
         </tbody>
