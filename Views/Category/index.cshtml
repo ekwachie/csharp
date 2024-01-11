@@ -8,7 +8,7 @@
         </tr>
     </thead>
     <tbody>
-        @foreach(var cat in Model){
+        @foreach(var cat in Model.OrderBy(u=>u.DisplayOrder)){
         <tr>
             <td>@cat.Name</td>
             <td>@cat.DisplayOrder</td>
