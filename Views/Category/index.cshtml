@@ -1,18 +1,29 @@
 @model List<Category>
-<h1>Category List</h1>
-<table class="table table-striped">
-    <thead>
-        <tr>
-            <th>Category name</th>
-            <th>Display Order</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach(var cat in Model.OrderBy(u=>u.DisplayOrder)){
-        <tr>
-            <td>@cat.Name</td>
-            <td>@cat.DisplayOrder</td>
-        </tr>
-        }
-    </tbody>
-</table>
+<div class="container">
+    <div class="row pt-4 pb-3">
+        <div class="col">
+            <h2 class="text-primary">Category Lists</h2>
+        </div>
+        <div class="col">
+            <a asp-controller="category" asp-action="create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Create new category</a>
+            <a asp-controller="category" asp-action="edit" class="btn btn-success"><i class="bi bi-plus-circle"></i> Edit</a>
+        </div>
+    </div>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Category name</th>
+                <th>Display Order</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cat in Model.OrderBy(u => u.DisplayOrder))
+            {
+                <tr>
+                    <td>@cat.Name</td>
+                    <td>@cat.DisplayOrder</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

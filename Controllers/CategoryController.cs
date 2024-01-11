@@ -15,4 +15,12 @@ public class CategoryController : Controller
         List<Category> objCategoryList = db.Categories.ToList();
         return View(objCategoryList);
     }
+
+    public IActionResult Create(){
+        return View();
+    }
+
+        public IActionResult Edit(){
+        return View();
+    }
 }
