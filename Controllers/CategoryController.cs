@@ -14,15 +14,7 @@ public class CategoryController : Controller
     public IActionResult Index()
     {
         List<Category> objCategoryList = db.Categories.ToList();
-
-        if (objCategoryList == null)
-        {
-            return View();
-        }
-        else
-        {
-            return View(objCategoryList);
-        }
+        return View(objCategoryList);
 
     }
 
@@ -77,17 +69,9 @@ public class CategoryController : Controller
     [HttpPost]
     public IActionResult Edit(Category cat)
     {
-        if (cat.Name == cat.DisplayOrder.ToString())
-        {
-            ModelState.AddModelError("Name", "The name should not match the display order");
-        }
-        if (cat.Name != null && cat.Name.Equals("test", StringComparison.CurrentCultureIgnoreCase))
-        {
-            ModelState.AddModelError("Name", "test is invalid valid");
-        }
         if (ModelState.IsValid)
         {
-            db.Categories.Add(cat);
+            db.Categories.Update(cat);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
