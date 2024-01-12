@@ -1,0 +1,10 @@
+/Users/evans/webroot/csharp/csharp.Utility/bin/Debug/net8.0/csharp.Utility.deps.json
+/Users/evans/webroot/csharp/csharp.Utility/bin/Debug/net8.0/csharp.Utility.dll
+/Users/evans/webroot/csharp/csharp.Utility/bin/Debug/net8.0/csharp.Utility.pdb
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/csharp.Utility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/csharp.Utility.csproj.CoreCompileInputs.cache
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/csharp.Utility.sourcelink.json
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/csharp.Utility.dll
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/refint/csharp.Utility.dll
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/csharp.Utility.pdb
+/Users/evans/webroot/csharp/csharp.Utility/obj/Debug/net8.0/ref/csharp.Utility.dll

@@ -1,0 +1,16 @@
+/Users/evans/webroot/csharp/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.deps.json
+/Users/evans/webroot/csharp/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.runtimeconfig.json
+/Users/evans/webroot/csharp/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.dll
+/Users/evans/webroot/csharp/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.pdb
+/Users/evans/webroot/csharp/csharp.DataAccess/bin/Debug/net8.0/csharp.Models.dll
+/Users/evans/webroot/csharp/csharp.DataAccess/bin/Debug/net8.0/csharp.Models.pdb
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.csproj.AssemblyReference.cache
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.csproj.CoreCompileInputs.cache
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.sourcelink.json
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.csproj.CopyComplete
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.dll
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/refint/csharp.DataAccess.dll
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.pdb
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.genruntimeconfig.cache
+/Users/evans/webroot/csharp/csharp.DataAccess/obj/Debug/net8.0/ref/csharp.DataAccess.dll

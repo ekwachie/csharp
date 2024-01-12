@@ -1,5 +1,11 @@
 /Users/evans/webroot/csharp/bin/Debug/net8.0/appsettings.Development.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/appsettings.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/obj/csharp.DataAccess.csproj.nuget.dgspec.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/obj/project.assets.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/obj/csharp.Models.csproj.nuget.dgspec.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/obj/project.assets.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Utility/obj/csharp.Utility.csproj.nuget.dgspec.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Utility/obj/project.assets.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.staticwebassets.runtime.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.deps.json
@@ -80,8 +86,6 @@
 /Users/evans/webroot/csharp/bin/Debug/net8.0/zh-Hant/Microsoft.CodeAnalysis.Workspaces.resources.dll
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.csproj.AssemblyReference.cache
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.GeneratedMSBuildEditorConfig.editorconfig
-/Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.AssemblyInfoInputs.cache
-/Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.AssemblyInfo.cs
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.csproj.CoreCompileInputs.cache
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.MvcApplicationPartsAssemblyInfo.cache
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.RazorAssemblyInfo.cache
@@ -103,3 +107,10 @@
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.pdb
 /Users/evans/webroot/csharp/obj/Debug/net8.0/csharp.genruntimeconfig.cache
 /Users/evans/webroot/csharp/obj/Debug/net8.0/ref/csharp.dll
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.deps.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.runtimeconfig.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.sourcelink.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/bin/Debug/net8.0/csharp.Models.deps.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/obj/Debug/net8.0/csharp.Models.sourcelink.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Utility/bin/Debug/net8.0/csharp.Utility.deps.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Utility/obj/Debug/net8.0/csharp.Utility.sourcelink.json
