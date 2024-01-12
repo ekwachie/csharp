@@ -8,3 +8,4 @@
 /Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/refint/csharp.Models.dll
 /Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/csharp.Models.pdb
 /Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/ref/csharp.Models.dll
+/Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/csharp.Models.csproj.AssemblyReference.cache
