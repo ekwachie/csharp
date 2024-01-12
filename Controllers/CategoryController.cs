@@ -77,4 +77,35 @@ public class CategoryController : Controller
         }
         return View();
     }
+
+    public IActionResult Delete(int? id)
+    {
+        if (id == null || id == 0)
+        {
+            return NotFound();
+        }
+        Category? data = db.Categories.Find(id);
+        if (data == null)
+        {
+            return NotFound();
+        }
+        return View(data);
+    }
+
+    //for post request to create category
+    [HttpPost, ActionName("Delete")]
+    public IActionResult DeletePost(int? id)
+    {
+        // find the category from db
+        Category? data = db.Categories.Find(id);
+
+        if (data == null)
+        {
+            return NotFound();
+        }
+        db.Categories.Remove(data);
+        db.SaveChanges();
+        return RedirectToAction("Index");
+
+    }
 }

@@ -23,7 +23,7 @@
                     <td>@cat.Name</td>
                     <td>@cat.DisplayOrder</td>
                     <td><a asp-controller="category" asp-action="edit" asp-route-id="@cat.Id" class="btn btn-sm btn-info"><i class="bi bi-pencil-square"></i> Edit</a></td>
-                    <td><a asp-controller="category" asp-action="index" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i> Delete</a></td>
+                    <td><a asp-controller="category" asp-action="delete" asp-route-id="@cat.Id" class="btn btn-sm btn-danger"><i class="bi bi-trash-fill"></i> Delete</a></td>
                 </tr>
             }
         </tbody>
