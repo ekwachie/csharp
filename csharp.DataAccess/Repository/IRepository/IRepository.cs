@@ -11,13 +11,13 @@ public interface IRepository<T> where T : class
     // Select one data using link operations
     T Get(Expression<Func<T, bool>> filter);
     // insert into db table
-    void Add(T entity);
+    void Insert(T entity);
     // update into db table
     // void Update(T entity);
     // delete a record from db table
-    void Remove(T entity);
+    void Delete(T entity);
     // delete multi records from db table in a single call
-    void RemoveRange(IEnumerable<T> entity);
+    void DeleteRange(IEnumerable<T> entity);
 
 
 

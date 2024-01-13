@@ -17,7 +17,7 @@ public class Repository<T> : IRepository<T> where T : class
         this.dbSet = db.Set<T>();
     }
 
-    public void Add(T entity)
+    public void Insert(T entity)
     {
         dbSet.Add(entity);
 
@@ -36,12 +36,12 @@ public class Repository<T> : IRepository<T> where T : class
         return query.ToList();
     }
 
-    public void Remove(T entity)
+    public void Delete(T entity)
     {
         dbSet.Remove(entity);
     }
 
-    public void RemoveRange(IEnumerable<T> entity)
+    public void DeleteRange(IEnumerable<T> entity)
     {
         dbSet.RemoveRange(entity);
     }
