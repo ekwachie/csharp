@@ -556,7 +556,9 @@
       "System.Threading.Channels/6.0.0": {},
       "csharp.Models/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "8.0.1"
+          "Microsoft.EntityFrameworkCore": "8.0.1",
+          "Microsoft.EntityFrameworkCore.Tools": "8.0.1",
+          "Pomelo.EntityFrameworkCore.MySql": "8.0.0-beta.2"
         },
         "runtime": {
           "csharp.Models.dll": {}

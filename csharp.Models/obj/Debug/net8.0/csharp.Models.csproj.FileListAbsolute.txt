@@ -9,3 +9,5 @@
 /Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/csharp.Models.pdb
 /Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/ref/csharp.Models.dll
 /Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/csharp.Models.csproj.AssemblyReference.cache
+/Users/evans/webroot/csharp/csharp.Models/bin/Debug/net8.0/csharp.Models.runtimeconfig.json
+/Users/evans/webroot/csharp/csharp.Models/obj/Debug/net8.0/csharp.Models.genruntimeconfig.cache
