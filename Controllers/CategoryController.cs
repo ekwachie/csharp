@@ -1,4 +1,4 @@
-using csharp.DataAccess.app;
+using csharp.DataAccess;
 using csharp.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -6,15 +6,15 @@ namespace csharp.Controllers;
 
 public class CategoryController : Controller
 {
-    private readonly Config db;
-    public CategoryController(Config conn)
+    private readonly ICategoryRepository catRepo;
+    public CategoryController(ICategoryRepository conn)
     {
-        db = conn;
+        catRepo = conn;
     }
     public IActionResult Index()
     {
-        List<Category> objCategoryList = db.Categories.ToList();
-        return View(objCategoryList);
+        List<Category> data = catRepo.GetAll().ToList();
+        return View(data);
 
     }
 
@@ -38,8 +38,8 @@ public class CategoryController : Controller
         }
         if (ModelState.IsValid)
         {
-            db.Categories.Add(cat);
-            db.SaveChanges();
+            catRepo.Insert(cat);
+            catRepo.Save();
             TempData["success"] = "Category created successfully";
             return RedirectToAction("Index");
         }
@@ -54,7 +54,7 @@ public class CategoryController : Controller
             return NotFound();
         }
         // first style of retrieving data from db using GET - only works on the primary key
-        Category? data = db.Categories.Find(id);
+        Category? data = catRepo.Get(u => u.Id == id);
         // second style of retrieving data from db using GET - will work if not a primary key
         // Category? data1 = db.Categories.FirstOrDefault(u => u.Id == id);
         // last style of retrieving data from db using GET - mainly used for complex queries
@@ -72,8 +72,8 @@ public class CategoryController : Controller
     {
         if (ModelState.IsValid)
         {
-            db.Categories.Update(cat);
-            db.SaveChanges();
+            catRepo.Update(cat);
+            catRepo.Save();
             TempData["success"] = "Category updated successfully";
             return RedirectToAction("Index");
         }
@@ -86,7 +86,7 @@ public class CategoryController : Controller
         {
             return NotFound();
         }
-        Category? data = db.Categories.Find(id);
+        Category? data = catRepo.Get(u => u.Id == id);
         if (data == null)
         {
             return NotFound();
@@ -99,14 +99,14 @@ public class CategoryController : Controller
     public IActionResult DeletePost(int? id)
     {
         // find the category from db
-        Category? data = db.Categories.Find(id);
+        Category? data = catRepo.Get(u => u.Id == id);
 
         if (data == null)
         {
             return NotFound();
         }
-        db.Categories.Remove(data);
-        db.SaveChanges();
+        catRepo.Delete(data);
+        catRepo.Save();
         TempData["success"] = "Category deleted successfully";
         return RedirectToAction("Index");
 

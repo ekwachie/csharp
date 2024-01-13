@@ -111,7 +111,7 @@
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/bin/Debug/net8.0/csharp.DataAccess.runtimeconfig.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.DataAccess/obj/Debug/net8.0/csharp.DataAccess.sourcelink.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/bin/Debug/net8.0/csharp.Models.deps.json
+/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/bin/Debug/net8.0/csharp.Models.runtimeconfig.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/obj/Debug/net8.0/csharp.Models.sourcelink.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Utility/bin/Debug/net8.0/csharp.Utility.deps.json
 /Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Utility/obj/Debug/net8.0/csharp.Utility.sourcelink.json
-/Users/evans/webroot/csharp/bin/Debug/net8.0/csharp.Models/bin/Debug/net8.0/csharp.Models.runtimeconfig.json

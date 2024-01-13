@@ -18,7 +18,4 @@ public interface IRepository<T> where T : class
     void Delete(T entity);
     // delete multi records from db table in a single call
     void DeleteRange(IEnumerable<T> entity);
-
-
-
 }
