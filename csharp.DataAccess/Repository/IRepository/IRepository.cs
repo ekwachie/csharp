@@ -3,7 +3,7 @@
 namespace csharp.DataAccess;
 
 // creating a generic repository pattern wher T - Model class
-internal interface IRepository<T> where T : class 
+public interface IRepository<T> where T : class 
 {
     // Let T - Category( Can be any Class Model)  
     // selecting all from db table
