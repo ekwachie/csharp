@@ -13,7 +13,8 @@ public interface IRepository<T> where T : class
     // insert into db table
     void Insert(T entity);
     // update into db table
-    // void Update(T entity);
+    void Update(T entity);
+    void Save();
     // delete a record from db table
     void Delete(T entity);
     // delete multi records from db table in a single call

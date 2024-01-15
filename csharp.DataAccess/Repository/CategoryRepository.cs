@@ -11,14 +11,4 @@ public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         db = conn;
     }
-
-    public void Save()
-    {
-        db.SaveChanges();
-    }
-
-    public void Update(Category data)
-    {
-        db.Update(data);
-    }
 }

@@ -45,4 +45,14 @@ public class Repository<T> : IRepository<T> where T : class
     {
         dbSet.RemoveRange(entity);
     }
+
+    public void Update(T entity)
+    {
+        dbSet.Update(entity);
+    }
+
+    public void Save()
+    {
+        db.SaveChanges();
+    }
 }
