@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using csharp.DataAccess.app;
 
@@ -10,9 +11,11 @@ using csharp.DataAccess.app;
 namespace csharp.Migrations
 {
     [DbContext(typeof(Config))]
-    partial class ConfigModelSnapshot : ModelSnapshot
+    [Migration("20240117075015_CreateUserTable")]
+    partial class CreateUserTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -66,10 +69,6 @@ namespace csharp.Migrations
                         .HasColumnType("longtext");
 
                     b.Property<string>("Mname")
-                        .IsRequired()
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Password")
                         .IsRequired()
                         .HasColumnType("longtext");
 

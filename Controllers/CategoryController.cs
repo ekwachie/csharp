@@ -104,7 +104,7 @@ public class CategoryController : Controller
         {
             return NotFound();
         }
-        db.Category.Delete(data);
+        db.Category.Delete(data); 
         db.Category.Save();
         TempData["success"] = "Category deleted successfully";
         return RedirectToAction("Index");

@@ -9,6 +9,7 @@ public class Config : DbContext {
     }
     // property to create Categories DbTable
     public DbSet<Category> Categories { get; set; }
+    public DbSet<User> Users { get; set; }
 
     // auto populating Category Table
     // protected override void OnModelCreating(ModelBuilder modelBuilder)
